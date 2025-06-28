@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Sakit Pilihan Bunda</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.rspb.png" alt="Logo Rumah Sakit Pilihan Bunda" class="rs-logo">
+        </div>
+        <h1>Rumah Sakit Pilihan Bunda</h1>
+        <p>Pelayanan Kesehatan Terpercaya untuk Keluarga Anda</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#doctors">Daftar Dokter</a></li>
+            <li><a href="#contact">Kontak Kami</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="section-container">
+            <h2>Tentang Rumah Sakit Pilihan Bunda</h2>
+            <p><strong>Rumah Sakit Pilihan Bunda</strong> hadir sebagai wujud komitmen kami dalam memberikan pelayanan kesehatan terbaik dan komprehensif bagi seluruh keluarga. Didirikan pada tahun 2005, kami telah berkembang menjadi salah satu fasilitas kesehatan terkemuka di Jakarta Timur, dengan fokus pada keselamatan pasien, inovasi medis, dan keramahan pelayanan.</p>
+            <p>Dilengkapi dengan teknologi medis terkini dan didukung oleh tim dokter spesialis yang berpengalaman serta staf medis profesional, kami siap melayani berbagai kebutuhan kesehatan Anda. Kami percaya bahwa setiap pasien berhak mendapatkan perhatian khusus dan penanganan yang tepat.</p>
+            <p>Visi kami adalah menjadi rumah sakit pilihan utama keluarga, sedangkan misi kami adalah memberikan pelayanan kesehatan yang berkualitas, aman, efektif, dan berbasis kasih sayang.</p>
+        </section>
+
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2025 RSPBD.CO.ID - Rumah Sakit Pilihan Bunda. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <div id="reservationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Formulir Reservasi Dokter</h2>
+            <p>Anda akan melakukan reservasi dengan:</p>
+            <h3 id="modalDoctorName"></h3>
+            <p class="small-text">Silakan isi detail di bawah ini. Tim kami akan menghubungi Anda untuk konfirmasi jadwal pasti.</p>
+            
+            <form id="reservationForm">
+                <label for="patientName">Nama Lengkap Pasien:</label>
+                <input type="text" id="patientName" name="patientName" required>
+
+                <label for="reservationDate">Tanggal Reservasi Preferensi:</label>
+                <input type="date" id="reservationDate" name="reservationDate" required>
+
+                <label for="reservationTime">Waktu Preferensi:</label>
+                <input type="time" id="reservationTime" name="reservationTime" required>
+
+                <label for="patientPhone">Nomor Telepon (WhatsApp):</label>
+                <input type="tel" id="patientPhone" name="patientPhone" placeholder="Contoh: 081234567890" required>
+
+                <label for="patientEmail">Email (Opsional):</label>
+                <input type="email" id="patientEmail" name="patientEmail">
+
+                <label for="notes">Catatan Tambahan (Opsional):</label>
+                <textarea id="notes" name="notes" rows="3" placeholder="Misal: Saya punya keluhan demam tinggi sejak kemarin."></textarea>
+
+                <button type="submit" class="submit-button">Kirim Permintaan Reservasi</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
